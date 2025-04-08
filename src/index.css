@@ -1,0 +1,227 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: transparent;
+
+  text-rendering: optimizeLegibility;
+}
+
+
+
+.top-bar {
+  -webkit-app-region: drag;
+}
+
+button, input {
+  -webkit-app-region: no-drag;
+}
+
+
+
+
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  position: absolute;
+  right: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #dfdfdf;
+  border-radius: 10px;
+  transition: background-color 8s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#titulo {
+  transition: 5s;
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin-top: 2px;
+}
+
+#main {
+  -webkit-app-region: drag;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+#card-pomo {
+  border-radius: 15px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  transition: 2s;
+  background-color: #535bf2;
+}
+
+#giroTurbo {
+  transition: 1s;
+  background-image: url("./assets/turbina.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100px;
+  background-position: 50%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes girarInfinitamente {
+  0% {
+    transform: rotate(0deg); /* Começa com 0 graus de rotação */
+  }
+  100% {
+    transform: rotate(360deg); /* Termina com 360 graus de rotação (uma volta completa) */
+  }
+}
+
+@keyframes tremer {
+  0%, 100% {
+    transform: translateX(0); /* Começa e termina com a imagem na posição original */
+    transform: translateY(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-2px); /* Move a imagem 5 pixels para a esquerda */
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(2px); /* Move a imagem 5 pixels para a direita */
+    transform: translateY(2px);
+  }
+  
+}
+
+#giro {
+  margin-top: 10px;
+  margin-right: 20px;
+  animation: girarInfinitamente 2s linear infinite;
+}
+
+#giroTurbo:hover {
+  transition: 1s;
+  animation: girarInfinitamente 2s linear infinite;
+  animation: tremer 5s ease infinite; /* Aplica a animação de tremer quando o mouse passa por cima da imagem */
+}
+
+#times {
+  width: 80px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  background-color: #1a1a1a;
+  border-radius: 15px 0 0 15px;
+  padding: 5px;
+  scroll-behavior: smooth;
+
+  flex-shrink: 1;
+  min-height: 0;
+}
+
+
+.botao-time {
+  border-radius: 10px;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 2em #f7df1eaa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+#conteudoBolinhas{
+  transition: 1s;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.bolinhas{
+  margin-left: 12px;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  border-color: black;
+  box-shadow: black;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
