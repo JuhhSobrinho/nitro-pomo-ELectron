@@ -11,8 +11,5 @@ A lógica aplicada segue a técnica Pomodoro, com:
 
 ### 🔽 Download
 
-- 💻 **Windows (instalador `.exe`)**: [Clique para baixar](https://link-do-seu-google-drive-ou-outro-aqui)
-- 📁 **Windows (arquivo `.zip`)**: [Versão compactada](https://link-do-zip)
-- 🐧 **Linux (`.deb`)**: [Download para Debian/Ubuntu](https://link-deb)
-- 🐧 **Linux (`.rpm`)**: [Download para Fedora/OpenSUSE](https://link-rpm)
-- 🍏 **MacOS (`.zip`)**: [Versão para Mac](https://link-mac)
+- 💻 **Windows (instalador `.exe`)**: [Clique para baixar](https://drive.google.com/file/d/1gltgr0Q1LnRMW_pZSrKcTmVU5vCsusk7/view?usp=sharing)
+
